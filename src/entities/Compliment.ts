@@ -14,6 +14,7 @@ export class Compliment {
 
   @JoinColumn({ name: 'user_sender' })
   @ManyToOne(() => User) // Muitos elogios pertecem a um usuário
+  userSender: User;
 
   @Column()
   user_receiver: string;
